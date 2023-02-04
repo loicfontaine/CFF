@@ -1,4 +1,4 @@
-import Train from "./Train";
+import Train from "./Train.js";
 ("use strict");
 
 const contener = document.querySelector("#board");

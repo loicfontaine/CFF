@@ -558,8 +558,8 @@ function hmrAccept(bundle, id) {
 
 },{}],"i4o3Y":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _train = require("./Train");
-var _trainDefault = parcelHelpers.interopDefault(_train);
+var _trainJs = require("./Train.js");
+var _trainJsDefault = parcelHelpers.interopDefault(_trainJs);
 "use strict";
 const contener = document.querySelector("#board");
 async function getStation() {
@@ -576,7 +576,7 @@ async function getStation() {
 async function getCleanData() {
     const data = await getStation();
     data["stationboard"].forEach((train)=>{
-        new (0, _trainDefault.default)(train).display(contener);
+        new (0, _trainJsDefault.default)(train).display(contener);
     });
 }
 getCleanData();
